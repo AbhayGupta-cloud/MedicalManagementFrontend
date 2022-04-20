@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard/dashboard.component';
+import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -44,6 +45,10 @@ const routes: Routes = [
       {
         path:'profile',
         component:ProfileComponent,
+      },
+      {
+        path:"departments",
+        component:ViewDepartmentsComponent
       },
     ],
   },

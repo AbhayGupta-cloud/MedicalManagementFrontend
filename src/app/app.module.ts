@@ -25,6 +25,8 @@ import {MatListModule} from '@angular/material/list';
 import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
+import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
+import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,9 @@ import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
     DashboardComponent,
     SidebarComponent,
     UserDashboardComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ViewDepartmentsComponent,
+    AddDepartmentComponent
   ],
   imports: [
     BrowserModule,
