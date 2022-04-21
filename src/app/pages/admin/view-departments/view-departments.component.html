@@ -1,1 +1,14 @@
-<p>view-departments works!</p>
+<mat-card>
+    <h1>All Categories</h1>
+    <mat-list>
+        <mat-list-item *ngFor="let d of departments">
+            <mat-icon mat-list-icon>folder</mat-icon>
+            <div mat-line>{{d.departmentName}}</div>
+            <div mat-line>{{d.description}}</div>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+    <div class="container text-center mt20">
+        <button routerLink="/admin/add-department" mat-raised-button color="primary">Add New Department</button>
+    </div>
+</mat-card>

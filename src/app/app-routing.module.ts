@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard/dashboard.component';
 import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
@@ -50,6 +51,10 @@ const routes: Routes = [
         path:"departments",
         component:ViewDepartmentsComponent
       },
+      {
+        path:"add-department",
+        component:AddDepartmentComponent
+      }
     ],
   },
 ];
