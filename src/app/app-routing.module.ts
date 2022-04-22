@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard/dashboard.component';
 import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
+import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-opd-schedule.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -54,6 +55,10 @@ const routes: Routes = [
       {
         path:"add-department",
         component:AddDepartmentComponent
+      },
+      {
+        path:'opdSchedule',
+        component:ViewOPDScheduleComponent
       }
     ],
   },

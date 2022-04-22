@@ -27,6 +27,7 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
 import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
+import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-opd-schedule.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { AddDepartmentComponent } from './pages/admin/add-department/add-departm
     UserDashboardComponent,
     WelcomeComponent,
     ViewDepartmentsComponent,
-    AddDepartmentComponent
+    AddDepartmentComponent,
+    ViewOPDScheduleComponent
   ],
   imports: [
     BrowserModule,
