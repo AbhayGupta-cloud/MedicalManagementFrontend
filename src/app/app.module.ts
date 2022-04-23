@@ -28,6 +28,7 @@ import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
 import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
 import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-opd-schedule.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,8 +60,10 @@ import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-o
     MatToolbarModule,
     MatIconModule,
     MatListModule,
+    
   ],
   providers: [authInterceptorProviders],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

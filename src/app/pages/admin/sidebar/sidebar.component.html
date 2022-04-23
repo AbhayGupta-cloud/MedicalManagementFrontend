@@ -1,6 +1,6 @@
 <mat-card>
-    <mat-action-list>
-        <div mat-subheader>Menu</div>
+    <mat-action-list mode="side" opened="true">
+        <div mat-subheader >Menu</div>
         <button routerLink="/admin" mat-list-item>
             <mat-icon mat-list-icon>home</mat-icon>Home
         </button>
@@ -13,10 +13,10 @@
         <button mat-list-item routerLink="/admin/add-department">
             <mat-icon mat-list-icon>category</mat-icon>Add Department
         </button>
-        <button mat-list-item routerLink="/admin/add-department">
+        <button mat-list-item routerLink="/admin/opdSchedule">
             <mat-icon mat-list-icon>category</mat-icon>OPD_Schedule
         </button>
-        <button mat-list-item routerLink="/admin/opdSchedule">
+        <button mat-list-item routerLink="/admin/">
             <mat-icon mat-list-icon>category</mat-icon>Add OPD Schedule
         </button>
     </mat-action-list>
