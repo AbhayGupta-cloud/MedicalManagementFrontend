@@ -11,4 +11,8 @@ export class OpdService {
   public opd(){
     return this._http.get(`${baseUrl}/opdSchedule/`);
   }
+  //add opdSchedule
+  public addOpdSchedule(opd){
+   return this._http.post(`${baseUrl}/opdSchedule/`,opd);
+  }
 }

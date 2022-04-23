@@ -29,6 +29,8 @@ import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-de
 import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
 import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-opd-schedule.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { AddOpdScheduleComponent } from './pages/admin/add-opd-schedule/add-opd-schedule.component';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +46,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     WelcomeComponent,
     ViewDepartmentsComponent,
     AddDepartmentComponent,
-    ViewOPDScheduleComponent
+    ViewOPDScheduleComponent,
+    AddOpdScheduleComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    
+    MatSelectModule,
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent],

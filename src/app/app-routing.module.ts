@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
+import { AddOpdScheduleComponent } from './pages/admin/add-opd-schedule/add-opd-schedule.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard/dashboard.component';
 import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
 import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-opd-schedule.component';
@@ -59,6 +60,10 @@ const routes: Routes = [
       {
         path:'opdSchedule',
         component:ViewOPDScheduleComponent
+      },
+      {
+        path:'add-opdSchedule',
+        component:AddOpdScheduleComponent,
       }
     ],
   },
