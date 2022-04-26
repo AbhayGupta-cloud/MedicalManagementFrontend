@@ -15,4 +15,8 @@ export class OpdService {
   public addOpdSchedule(opd){
    return this._http.post(`${baseUrl}/opdSchedule/`,opd);
   }
+  //delete quiz
+  public deleteOpdSchedule(sId){
+    return this._http.delete(`${baseUrl}/opdSchedule/${sId}`);
+  }
 }

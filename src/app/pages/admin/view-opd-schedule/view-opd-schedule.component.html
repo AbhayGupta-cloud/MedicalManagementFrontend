@@ -20,6 +20,9 @@
         <hr class="my-4">
         <p>OPD LOCATION:{{o.location}}</p>
         <p>OPD TIMINGS:{{o.opdRegistrationTimings}}</p>
+        <button [routerLink]="'/admin/opdSchedule/'+ o.sId" type="submit" class="btn btn-warning">Update OPD Schedule</button>
+
+        <button type="submit" class="btn btn-info" (click)="deleteOpdSchedule(o.sId)">Delete OPD Schedule</button>
       </div>
 
     <!-- Optional JavaScript -->

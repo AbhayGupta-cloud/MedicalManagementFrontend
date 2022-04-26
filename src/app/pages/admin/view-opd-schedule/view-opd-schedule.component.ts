@@ -42,7 +42,27 @@ export class ViewOPDScheduleComponent implements OnInit {
         Swal.fire('Error !',"Error in Loading Data !","error");
         
       }
-    )
+    );
   }
-
+  //
+  deleteOpdSchedule(sId){
+    Swal.fire({
+      icon:'info',
+      title:"Are You Sure You Wan't to Delete OPD Schedule?",
+      confirmButtonText:'Delete',
+      showCancelButton:true,
+    }).then((result)=>{
+      if(result.isConfirmed){
+        //delete
+        this._opd.deleteOpdSchedule(sId).subscribe(
+          (data)=>{
+            this.opdSchedule=this.opdSchedule.filter((opd)=>opd.sId!=sId);
+            Swal.fire('Success','OPD Schedule Deleted Successfully','success');
+          },(error)=>{
+            Swal.fire('Error','Server Error','error');
+          }
+        );
+      }
+    })
+  }
 }

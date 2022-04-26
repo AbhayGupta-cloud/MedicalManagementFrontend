@@ -31,6 +31,7 @@ import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-o
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AddOpdScheduleComponent } from './pages/admin/add-opd-schedule/add-opd-schedule.component';
 import {MatSelectModule} from '@angular/material/select';
+import { UpdateOpdScheduleComponent } from './pages/admin/update-opd-schedule/update-opd-schedule.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import {MatSelectModule} from '@angular/material/select';
     ViewDepartmentsComponent,
     AddDepartmentComponent,
     ViewOPDScheduleComponent,
-    AddOpdScheduleComponent
+    AddOpdScheduleComponent,
+    UpdateOpdScheduleComponent
   ],
   imports: [
     BrowserModule,
