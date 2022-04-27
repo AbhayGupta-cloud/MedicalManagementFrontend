@@ -5,6 +5,7 @@ import { AddOpdScheduleComponent } from './pages/admin/add-opd-schedule/add-opd-
 import { DashboardComponent } from './pages/admin/dashboard/dashboard/dashboard.component';
 import { UpdateOpdScheduleComponent } from './pages/admin/update-opd-schedule/update-opd-schedule.component';
 import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
+import { ViewDoctorsComponent } from './pages/admin/view-doctors/view-doctors.component';
 import { ViewOPDScheduleComponent } from './pages/admin/view-opd-schedule/view-opd-schedule.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -69,6 +70,10 @@ const routes: Routes = [
       {
         path:'opdSchedule/:oid',
         component:UpdateOpdScheduleComponent
+      },
+      {
+        path:'view-doctors/:sId/:opdName',
+        component:ViewDoctorsComponent
       }
     ],
   },

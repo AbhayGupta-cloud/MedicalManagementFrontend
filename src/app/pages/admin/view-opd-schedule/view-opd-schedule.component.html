@@ -23,6 +23,9 @@
         <button [routerLink]="'/admin/opdSchedule/'+ o.sId" type="submit" class="btn btn-warning">Update OPD Schedule</button>
 
         <button type="submit" class="btn btn-info" (click)="deleteOpdSchedule(o.sId)">Delete OPD Schedule</button>
+
+        <button [routerLink]="'/admin/view-doctors/'+o.sId+'/'+o.opdName"
+        type="submit" class="btn btn-primary">Doctors</button>
       </div>
 
     <!-- Optional JavaScript -->
