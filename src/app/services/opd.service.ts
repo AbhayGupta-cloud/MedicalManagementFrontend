@@ -19,4 +19,12 @@ export class OpdService {
   public deleteOpdSchedule(sId){
     return this._http.delete(`${baseUrl}/opdSchedule/${sId}`);
   }
+  //get single opd
+  public getOpdSchedule(oid){
+    return this._http.get(`${baseUrl}/opdSchedule/${oid}`);
+  }
+  //update opd schedule
+  public updateOPD(oid){
+    return this._http.put(`${baseUrl}/opdSchedule/`,oid);
+  }
 }
