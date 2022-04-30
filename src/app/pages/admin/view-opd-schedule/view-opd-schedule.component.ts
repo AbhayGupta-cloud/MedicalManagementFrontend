@@ -22,7 +22,7 @@ export class ViewOPDScheduleComponent implements OnInit {
     },
     {
       qId:23,
-      title:'Basic Python Quiz',
+      title:'',
       description:'',
       maxMarks:50,
       numberOfQuestions:30,
