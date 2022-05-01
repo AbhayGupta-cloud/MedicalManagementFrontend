@@ -16,4 +16,13 @@ export class DepartmentService {
   public addDepartment(department){
     return this._http.post(`${baseUrl}/department/`,department);
   }
+  public deleteDepartment(did){
+    return this._http.delete(`${baseUrl}/department/${did}`);
+  }
+  public updateDepartment(did){
+    return this._http.put(`${baseUrl}/department/`,did)
+  }
+  public getDepartment(did){
+    return this._http.get(`${baseUrl}/department/${did}`);
+  }
 }

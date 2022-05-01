@@ -33,6 +33,7 @@ import { AddOpdScheduleComponent } from './pages/admin/add-opd-schedule/add-opd-
 import {MatSelectModule} from '@angular/material/select';
 import { UpdateOpdScheduleComponent } from './pages/admin/update-opd-schedule/update-opd-schedule.component';
 import { ViewDoctorsComponent } from './pages/admin/view-doctors/view-doctors.component';
+import { UpdateDepartmentComponent } from './pages/admin/update-department/update-department.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,8 @@ import { ViewDoctorsComponent } from './pages/admin/view-doctors/view-doctors.co
     ViewOPDScheduleComponent,
     AddOpdScheduleComponent,
     UpdateOpdScheduleComponent,
-    ViewDoctorsComponent
+    ViewDoctorsComponent,
+    UpdateDepartmentComponent
   ],
   imports: [
     BrowserModule,

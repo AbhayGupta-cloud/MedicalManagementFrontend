@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddDepartmentComponent } from './pages/admin/add-department/add-department.component';
 import { AddOpdScheduleComponent } from './pages/admin/add-opd-schedule/add-opd-schedule.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard/dashboard.component';
+import { UpdateDepartmentComponent } from './pages/admin/update-department/update-department.component';
 import { UpdateOpdScheduleComponent } from './pages/admin/update-opd-schedule/update-opd-schedule.component';
 import { ViewDepartmentsComponent } from './pages/admin/view-departments/view-departments.component';
 import { ViewDoctorsComponent } from './pages/admin/view-doctors/view-doctors.component';
@@ -60,6 +61,10 @@ const routes: Routes = [
         component:AddDepartmentComponent
       },
       {
+        path:'departments/:did',
+        component:UpdateDepartmentComponent
+      },
+      {
         path:'opdSchedule',
         component:ViewOPDScheduleComponent
       },
@@ -74,7 +79,7 @@ const routes: Routes = [
       {
         path:'view-doctors/:sId/:opdName',
         component:ViewDoctorsComponent
-      }
+      },
     ],
   },
 ];

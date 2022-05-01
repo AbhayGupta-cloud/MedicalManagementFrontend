@@ -21,9 +21,9 @@
         <p>OPD LOCATION:{{o.location}}</p>
         <p>OPD TIMINGS:{{o.opdRegistrationTimings}}</p>
         <button [routerLink]="'/admin/opdSchedule/'+ o.sId" type="submit" class="btn btn-warning">Update OPD Schedule</button>
-
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <button type="submit" class="btn btn-info" (click)="deleteOpdSchedule(o.sId)">Delete OPD Schedule</button>
-
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <button [routerLink]="'/admin/view-doctors/'+o.sId+'/'+o.opdName"
         type="submit" class="btn btn-primary">Doctors</button>
       </div>
