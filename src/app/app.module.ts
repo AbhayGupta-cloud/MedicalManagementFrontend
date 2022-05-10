@@ -34,6 +34,11 @@ import {MatSelectModule} from '@angular/material/select';
 import { UpdateOpdScheduleComponent } from './pages/admin/update-opd-schedule/update-opd-schedule.component';
 import { ViewDoctorsComponent } from './pages/admin/view-doctors/view-doctors.component';
 import { UpdateDepartmentComponent } from './pages/admin/update-department/update-department.component';
+import { SidebarComponent as UserSidebar } from './pages/user/sidebar/sidebar.component';
+import { LoadOpdScheduleComponent } from './pages/user/load-opd-schedule/load-opd-schedule.component';
+import {MatTableModule} from '@angular/material/table';
+import { AppointmentComponent } from './pages/user/appointment/appointment.component';
+import { ShowappointmentComponent } from './pages/user/showappointment/showappointment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +58,11 @@ import { UpdateDepartmentComponent } from './pages/admin/update-department/updat
     AddOpdScheduleComponent,
     UpdateOpdScheduleComponent,
     ViewDoctorsComponent,
-    UpdateDepartmentComponent
+    UpdateDepartmentComponent,
+    UserSidebar,
+    LoadOpdScheduleComponent,
+    AppointmentComponent,
+    ShowappointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +79,7 @@ import { UpdateDepartmentComponent } from './pages/admin/update-department/updat
     MatIconModule,
     MatListModule,
     MatSelectModule,
+    MatTableModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent],

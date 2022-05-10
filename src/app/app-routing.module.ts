@@ -13,6 +13,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { AppointmentComponent } from './pages/user/appointment/appointment.component';
+import { LoadOpdScheduleComponent } from './pages/user/load-opd-schedule/load-opd-schedule.component';
+import { ShowappointmentComponent } from './pages/user/showappointment/showappointment.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
 import { AdminGuard } from './services/admin.guard';
 import { NormalGuard } from './services/normal.guard';
@@ -36,9 +39,25 @@ const routes: Routes = [
   {
     path:'user-dashboard',
     component:UserDashboardComponent,
-    pathMatch:'full',
-    //canActivate:[NormalGuard],
+    canActivate:[NormalGuard],
+    children:[
+      {
+        path:':opdId',
+        component:LoadOpdScheduleComponent,
+      }
+    ]
   },
+  {
+    path:'appointmentBooking/:oid',
+    component:AppointmentComponent,
+  },
+  {
+    
+      path:'showAppointment',
+      component:ShowappointmentComponent,
+    
+  },
+
   {
     path:'admin',
     component:DashboardComponent,
